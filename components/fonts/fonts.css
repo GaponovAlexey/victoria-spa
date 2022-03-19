@@ -1,0 +1,16 @@
+/* abhaya-libre-regular - latin */
+@font-face {
+  font-family: 'GilroyMedium';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./Gilroy-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* abhaya-libre-700 - latin */
+@font-face {
+  font-family: 'GilroyBold';
+  font-style: bold;
+  font-weight: 700;
+  src: local(''),
+       url('./Gilroy-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
