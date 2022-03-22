@@ -12,6 +12,8 @@ const Home: NextPage = () => {
       </Head>
       <Header />
 
+
+
       <HomepageTop />
       <HeaderImg />
       <About />
