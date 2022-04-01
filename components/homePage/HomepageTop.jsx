@@ -1,7 +1,7 @@
 import { css } from '@emotion/css'
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { Button } from '../../utils/Button'
+import { Button } from '../utils/Button'
 
 export const HomepageTop = () => {
   const { LanguageENG } = useSelector((state) => state.data)

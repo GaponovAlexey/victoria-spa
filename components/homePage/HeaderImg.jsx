@@ -1,7 +1,7 @@
 import { css } from '@emotion/css'
 import React from 'react'
 
-import logoImg from '../../img/2.jpg'
+import logoImg from '../img/2.jpg'
 
 export const HeaderImg = () => {
   return (
