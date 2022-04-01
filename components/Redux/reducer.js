@@ -1,15 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
 //photo
-import photo1 from '/public/img/VCom/1-min.jpg'
-import photo2 from '/public/img/VCom/2-min.jpg'
-import photo3 from '/public/img/VCom/3-min.jpg'
-import photo4 from '/public/img/VCom/4-min.jpg'
-import photo5 from '/public/img/VCom/5-min.jpg'
-import photo6 from '/public/img/VCom/6-min.jpg'
-import photo7 from '/public/img/VCom/7-min.jpg'
-import photo8 from '/public/img/VCom/8-min.jpg'
-import photo9 from '/public/img/VCom/9-min.jpg'
-import photo10 from '/public/img/VCom/10-min.jpg'
 
 // sert
 import sert1 from '/public/img/VSertificat/1.jpg'
@@ -19,6 +9,7 @@ import sert4 from '/public/img/VSertificat/4.jpg'
 import sert6 from '/public/img/VSertificat/6.jpg'
 import sert7 from '/public/img/VSertificat/7.jpg'
 // const video1 = 'https://www.youtube.com/watch?v=YTNvrTUrlro'
+const video1 = '<iframe width="1467" height="718" src="https://www.youtube.com/embed/YTNvrTUrlro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
 const initialState = {
   LanguageENG: false,
@@ -96,24 +87,25 @@ const initialState = {
     },
   ],
   comentImg: [
-    { id: 1, photo: photo1 },
-    { id: 2, photo: photo2 },
-    { id: 3, photo: photo3 },
-    { id: 4, photo: photo4 },
-    { id: 5, photo: photo5 },
-    { id: 6, photo: photo6 },
-    { id: 7, photo: photo7 },
-    { id: 8, photo: photo8 },
-    { id: 9, photo: photo9 },
-    { id: 10, photo: photo10 },
+    { id: 1, photo: '/img/VCom/1-min.jpg' },
+    { id: 2, photo: '/img/VCom/2-min.jpg' },
+    { id: 3, photo: '/img/VCom/3-min.jpg' },
+    { id: 4, photo: '/img/VCom/4-min.jpg' },
+    { id: 5, photo: '/img/VCom/5-min.jpg' },
+    { id: 6, photo: '/img/VCom/6-min.jpg' },
+    { id: 7, photo: '/img/VCom/7-min.jpg' },
+    { id: 8, photo: '/img/VCom/8-min.jpg' },
+    { id: 9, photo: '/img/VCom/9-min.jpg' },
+    { id: 10, photo: '/img/VCom/10-min.jpg' },
   ],
   Certificates: [
-    { id: 4, certificate: sert3 },
-    { id: 2, certificate: sert1 },
-    { id: 3, certificate: sert2 },
-    { id: 6, certificate: sert4 },
-    { id: 7, certificate: sert6 },
-    { id: 8, certificate: sert7 },
+    // { id: 1, certificate: video1 },
+    { id: 4, certificate: '/img/VSertificat/3.jpg' },
+    { id: 2, certificate: '/img/VSertificat/1.jpg' },
+    { id: 3, certificate: '/img/VSertificat/2.jpg' },
+    { id: 6, certificate: '/img/VSertificat/4.jpg' },
+    { id: 7, certificate: '/img/VSertificat/6.jpg' },
+    { id: 8, certificate: '/img/VSertificat/7.jpg' },
   ],
 }
 

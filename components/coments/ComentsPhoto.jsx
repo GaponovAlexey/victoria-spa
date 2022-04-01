@@ -6,7 +6,6 @@ import Slider from 'react-slick'
 
 export const ComentsPhoto = () => {
   const { comentImg, LanguageENG } = useSelector((state) => state.data)
-  console.log(comentImg)
 
   const settings = {
     focusOnSelect: true,

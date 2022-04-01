@@ -1,7 +1,5 @@
 import { css } from '@emotion/css'
-import Image from 'next/image'
 import React from 'react'
-
 
 export const HeaderImg = () => {
   return (
@@ -17,11 +15,14 @@ export const HeaderImg = () => {
         }
       `}
     >
-      <Image
+      <img
+        width='960px'
+        height='400px'
+        src='/img/2.jpg'
+        alt='logo'
         className={css`
           object-fit: cover;
           object-position: 0px -360px;
-          
           border-radius: 5px;
           padding-top: 20px;
           @media (max-width: 768px) {
@@ -34,10 +35,6 @@ export const HeaderImg = () => {
             height: 200px;
           }
         `}
-        width='960px'
-          height='400px'
-        src='/img/2.jpg'
-        alt='logo'
       />
     </div>
   )

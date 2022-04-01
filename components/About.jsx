@@ -6,6 +6,7 @@ export const About = () => {
   const { LanguageENG } = useSelector((state) => state.data)
   return (
     <div
+      id='about'
       className={css`
         @media (max-width: 768px) {
           max-width: 710px;
@@ -73,7 +74,14 @@ export const About = () => {
           некоторые ответы на свои вопросы по конкретным проблемам. Записаться
           на процедуру можно `}{' '}
           <span>
-            <a className={css`color: blue;`}  href='https://dikidi.net/141929?p=0.pi'>здесь</a>
+            <a
+              className={css`
+                color: blue;
+              `}
+              href='https://dikidi.net/141929?p=0.pi'
+            >
+              здесь
+            </a>
           </span>
         </p>
       </div>

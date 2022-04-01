@@ -5,12 +5,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { isLanguageENG } from '../Redux/reducer'
 
 export const Contacts = () => {
-  
   const { LanguageENG } = useSelector((state) => state.data)
 
   const dispatch = useDispatch()
   return (
     <div
+      id='contacts'
       className={css`
         @media (max-width: 768px) {
           max-width: 710px;
@@ -52,7 +52,7 @@ export const Contacts = () => {
               ? 'Want to know more or just chat? You are welcome!'
               : 'Хотите узнать больше или просто спросить? Пожалуйста! '}
           </div>
-          <div  >
+          <div>
             <span>
               <a href='https://wa.me/79811654228?text=Я%20хочу%20у%20вас%20спросить'>
                 <img
@@ -65,7 +65,11 @@ export const Contacts = () => {
                 />
               </a>
             </span>
-            <span className={css` margin-left: 20px; `} >
+            <span
+              className={css`
+                margin-left: 20px;
+              `}
+            >
               <a href='https://www.instagram.com/pedicurecomenda/'>
                 <img
                   className={css`
@@ -83,7 +87,7 @@ export const Contacts = () => {
               padding-top: 20px;
             `}
           >
-           Подпишись на меня в Instagram
+            Подпишись на меня в Instagram
           </div>
           <div>
             <div

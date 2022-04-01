@@ -11,6 +11,7 @@ export const SkillsHome = () => {
   const { LanguageENG } = useSelector((state) => state.data)
   return (
     <div
+      id='skills'
       className={css`
         padding-bottom: 50px;
         border-radius: 5px;
@@ -36,7 +37,7 @@ export const SkillsHome = () => {
           padding-top: 30px;
         `}
       >
-        {LanguageENG ? 'Skills' : "Навыки"}
+        {LanguageENG ? 'Skills' : 'Навыки'}
       </h2>
       <div>
         <SkilsOnePage />

@@ -22,6 +22,7 @@ export const Certificates = () => {
 
   return (
     <div
+      id='certificates'
       className={css`
         @media (max-width: 768px) {
           max-width: 710px;
