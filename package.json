@@ -1,10 +1,10 @@
 {
-  "name": "victoria-spa",
+  "name": "podiatry-victoria",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "babel src -d lib",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
