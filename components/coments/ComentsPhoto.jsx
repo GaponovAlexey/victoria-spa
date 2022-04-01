@@ -1,11 +1,13 @@
 import { css } from '@emotion/css'
+import Image from 'next/image'
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
 export const ComentsPhoto = () => {
   const { comentImg, LanguageENG } = useSelector((state) => state.data)
-  
+  console.log(comentImg)
+
   const settings = {
     focusOnSelect: true,
     infinite: true,
@@ -54,10 +56,10 @@ export const ComentsPhoto = () => {
           <Slider {...settings}>
             {comentImg.map((coment) => (
               <div key={coment.id}>
-                <img
+                <Image
+                  width='200px'
+                  height='380px'
                   className={css`
-                    width: 200px;
-                    height: 380px;
                     @media (max-width: 768px) {
                       width: 170px;
                       height: 350px;

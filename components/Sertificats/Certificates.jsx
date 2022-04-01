@@ -1,4 +1,5 @@
 import { css } from '@emotion/css'
+import Image from 'next/image'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
@@ -47,7 +48,12 @@ export const Certificates = () => {
         >
           {LanguageENG ? 'Certificates' : 'Сертификаты'}
         </h3>
-        <div className={css`max-width: 470px; margin: 0 auto; `} >
+        <div
+          className={css`
+            max-width: 470px;
+            margin: 0 auto;
+          `}
+        >
           <Slider {...settings}>
             <div
               className={css`
@@ -92,10 +98,10 @@ export const Certificates = () => {
             </div>
             {Certificates.map((coment) => (
               <div key={coment.id}>
-                <img
+                <Image
+                  width='470px'
+                  height='400px'
                   className={css`
-                  width: 470px;
-                  height: 400px;
                   @media (max-width: 768px) {
                     width: 350px;
                     margin: 0 auto;
