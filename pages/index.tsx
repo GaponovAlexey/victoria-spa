@@ -15,6 +15,14 @@ import { Html } from 'next/document'
 const Home: NextPage = () => {
   return (
     <Html>
+      <Head>
+        <title>Педикюр у Виктории</title>
+        <link rel='icon' href='#!' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap'
+          rel='stylesheet'
+        />
+      </Head>
       <div
         id='home'
         className={css`
@@ -29,14 +37,6 @@ const Home: NextPage = () => {
           }
         `}
       >
-        <Head>
-          <title>Педикюр у Виктории</title>
-          <link rel='icon' href='#!' />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap'
-            rel='stylesheet'
-          />
-        </Head>
         <Header />
         <HomepageTop />
         <HeaderImg />
