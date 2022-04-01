@@ -9,7 +9,7 @@ export const Header = () => {
 
   return (
     <header
-    id='home'
+      id='home'
       className={css`
         position: fixed;
         z-index: 20;
@@ -17,6 +17,7 @@ export const Header = () => {
     >
       <div
         className={css`
+          color: white;
           ${Isactive &&
           `@media (max-width: 769px) {
               display: none;
@@ -24,12 +25,11 @@ export const Header = () => {
           ${!Isactive &&
           `@media (max-width: 769px) {
             position: fixed;
-            background-color: #000;
+            background-color: #fff;
             height: 100%;
             width: 100%;
             top: 0;
             left: 0;
-            color: white;
             display: inherit;
             padding: 50px;
             font-size: 42px;
@@ -66,24 +66,34 @@ export const Header = () => {
           </div>
         )}
         <li>
-          <a href='#home'>{LanguageENG ? 'Home' : 'Главная'}</a>
+          <a href='#home' onClick={() => setIsactive(!Isactive)}>
+            {LanguageENG ? 'Home' : 'Главная'}
+          </a>
         </li>
         <li>
-          <a href='#about'>{LanguageENG ? 'About' : 'Обо мне'}</a>
+          <a onClick={() => setIsactive(!Isactive)} href='#about'>
+            {LanguageENG ? 'About' : 'Обо мне'}
+          </a>
         </li>
         <li>
-          <a href='#skills'>{LanguageENG ? 'Skills' : 'Услуги'}</a>
+          <a onClick={() => setIsactive(!Isactive)} href='#skills'>
+            {LanguageENG ? 'Skills' : 'Услуги'}
+          </a>
         </li>
         <li>
-          <a href='#comments'>{LanguageENG ? 'Comments' : 'Отзывы'}</a>
+          <a onClick={() => setIsactive(!Isactive)} href='#comments'>
+            {LanguageENG ? 'Comments' : 'Отзывы'}
+          </a>
         </li>
         <li>
-          <a href='#certificates'>
+          <a onClick={() => setIsactive(!Isactive)} href='#certificates'>
             {LanguageENG ? 'Certificates' : 'Сертификаты'}
           </a>
         </li>
         <li>
-          <a href='#contacts'>{LanguageENG ? 'Contacts' : 'Контакты'}</a>
+          <a onClick={() => setIsactive(!Isactive)} href='#contacts'>
+            {LanguageENG ? 'Contacts' : 'Контакты'}
+          </a>
         </li>
         <li>
           <a>{LanguageENG ? 'Map' : 'Как меня найти'}</a>

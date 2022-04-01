@@ -20,6 +20,7 @@ export const ComentsPhoto = () => {
 
   return (
     <div
+      id='comments'
       className={css`
         position: relative;
         @media (max-width: 768px) {
