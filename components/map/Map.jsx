@@ -46,7 +46,7 @@ export const Map = () => {
               height: 100%;
             `}
             src='https://yandex.ru/map-widget/v1/?um=constructor%3A7ee18f36e2ecb5172e291ab5317e29f5464db154304505d820b4539531b9b338&amp;source=constructor'
-            frameborder='0'
+            // frameborder='0'
           ></iframe>
         </div>
       </div>

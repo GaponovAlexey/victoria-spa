@@ -40,7 +40,6 @@ export const SkilsOnePage = () => {
           `}
         >
           <img
-            className={css``}
             className='skilimg1'
             src={Skilimg4}
             alt='Skilimg4'
