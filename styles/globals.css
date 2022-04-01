@@ -20,7 +20,7 @@ li {
 
 
 .header__logo-img {
-  background: transparent url('../components/img/2.jpg') no-repeat center 38%;
+  background: transparent url('/img/2.jpg') no-repeat center 38%;
 }
 
 .skilimg1 {

@@ -2,8 +2,8 @@ import { css } from '@emotion/css'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import insta from '../img/svg/insta.svg'
-import what from '../img/svg/whatsapp.svg'
+// import insta from '/img/svg/insta.svg'
+// import what from ''
 import { isLanguageENG } from '../Redux/reducer'
 
 export const Contacts = () => {
@@ -60,7 +60,7 @@ export const Contacts = () => {
                     height: 5%;
                     width: 5%;
                   `}
-                  src={what}
+                  src='/img/svg/whatsapp.svg'
                   alt='whatsapp'
                 />
               </a>
@@ -72,7 +72,7 @@ export const Contacts = () => {
                     height: 5%;
                     width: 5%;
                   `}
-                  src={insta}
+                  src='/img/svg/insta.svg'
                   alt='insta'
                 />
               </a>

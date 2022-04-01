@@ -9,6 +9,7 @@ import { Certificates } from '../components/Sertificats/Certificates'
 import { Contacts } from '../components/Contacts/Contacts'
 import { Map } from '../components/map/Map'
 import { css } from '@emotion/css'
+import useSWR from 'swr'
 
 const Home: NextPage = () => {
   return (
