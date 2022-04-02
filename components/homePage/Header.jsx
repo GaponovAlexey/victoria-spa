@@ -56,6 +56,10 @@ export const Header = () => {
               `@media (max-width: 768px) {
                   display: none;
                 }`}
+              ${!Isactive &&
+              `@media (max-width: 3968px) {
+                  display: none;
+                }`}
               position: fixed;
               top: 20px;
               right: 20px;
