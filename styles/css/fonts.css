@@ -1,0 +1,16 @@
+/* andika-regular - latin */
+@font-face {
+  font-family: 'Andika';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/andika/andika-v19-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/andika/andika-v19-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/andika/andika-v19-latin-regular.woff2") format("woff2"), url("../fonts/andika/andika-v19-latin-regular.woff") format("woff"), url("../fonts/andika/andika-v19-latin-regular.ttf") format("truetype"), url("../fonts/andika/andika-v19-latin-regular.svg#Andika") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./old-kharkiv.otf") format("otf");
+}
+/*# sourceMappingURL=fonts.css.map */

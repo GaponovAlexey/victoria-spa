@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "EBGaramond";
+  src: url("/fonts/andika/andika-v19-latin-regular.ttf");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Andika';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/andika/andika-v19-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('/fonts/andika/andika-v19-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('/fonts/andika/andika-v19-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('/fonts/andika/andika-v19-latin-regular.woff') format('woff'),
+    /* Modern Browsers */ url('/fonts/andika/andika-v19-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('/fonts/andika/andika-v19-latin-regular.svg#Andika') format('svg'); /* Legacy iOS */
+}
+
+html,
+body {
+  font-family: 'EBGaramond', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header__logo-img {
+  background: transparent url('/img/2.jpg') no-repeat center 38%;
+}
+
+.skilimg1 {
+  object-fit: cover;
+  width: 352px;
+  height: 200px;
+  border-radius: 5px;
+}
+.comment-wrapper {
+  justify-content: space-between;
+}
+
+.mainIndex {
+  width: 960px;
+  /* font-family: 'Raleway', sans-serif; */
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    max-width: 710px;
+  }
+  @media (max-width: 420px) {
+    max-width: 350px;
+  }
+}

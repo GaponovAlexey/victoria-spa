@@ -12,7 +12,7 @@ import sert7 from '/public/img/VSertificat/7.jpg'
 const video1 = '<iframe width="1467" height="718" src="https://www.youtube.com/embed/YTNvrTUrlro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
 const initialState = {
-  LanguageENG: false,
+  LanguageENG: true,
   isModalMed: false,
   isPedModalCOS: false,
   isModalMAS: false,
